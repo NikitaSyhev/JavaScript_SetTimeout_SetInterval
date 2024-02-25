@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+#defuser {
+    margin: 30px;
+}
+
+#block {
+    margin: 30px;
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+
+noscript {
+    width: 100vh;
+    height: 100vh;
+
+    box-sizing: rgb(20, 2, 19);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+/* ЗАДАЧА 2 - КОНТЕКСТНОЕ МЕНЮ */
+#context-menu {
+    border-radius: 15px;
+
+    box-shadow: 0 0 5px #00000055;
+    display: none;
+    flex-direction: column;
+
+    position: fixed;
+/* прячет излишки дочернего элемента - элемент дочерний  не может вылазить за элемент родителя */
+    overflow: hidden;
+}
+
+.cm-item {
+    margin: 0;
+    padding: 10px 16px;
+    border: none;
+
+    background-color: rgb(170, 126, 212);
+
+   text-align: left;
+
+   font-size: 20px;
+
+   cursor: pointer;
+}
+
+.cm-item:hover {
+    background-color: rgb(163, 163, 179);
+}
